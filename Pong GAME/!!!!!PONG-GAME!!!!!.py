@@ -1,6 +1,7 @@
-# War grossteil ab geschrieben,
-# ich wollte die erfahrung machen wie es ist in sollchen Codes nach Fehlern zu suchen und diese
-# zu behebn und optisch anzupassen!!
+# War grossteil abgeschrieben,
+# ich wollte die erfahrung machen wie es ist 
+# in sollchen Codes nach Fehlern zu suchen
+# und diesezu behebn und optisch anzupassen!!
 
 
 import pygame
@@ -69,9 +70,9 @@ class Game:
         self.ball_pos += self.ball_acceleration
 
     def draw(self):
-        pygame.draw.rect(self.screen, pygame.Color(255, 0, 0), (self.p1_pos[0], self.p1_pos[1], 10, 100))
-        pygame.draw.rect(self.screen, pygame.Color(204, 255, 0), (self.p2_pos[0], self.p2_pos[1], 10, 100))
-        pygame.draw.rect(self.screen, pygame.Color(255, 255, 255), (self.ball_pos[0], self.ball_pos[1], 15, 15))
+        pygame.draw.rect(self.screen, pygame.Color(255, 0, 0), (self.p1_pos[0], self.p1_pos[1], 10, 100))  # Farbe Player One & Position
+        pygame.draw.rect(self.screen, pygame.Color(204, 255, 0), (self.p2_pos[0], self.p2_pos[1], 10, 100))  # Farbe Player Two & Position
+        pygame.draw.rect(self.screen, pygame.Color(255, 255, 255), (self.ball_pos[0], self.ball_pos[1], 15, 15))  # Fabe Ball & Position
 
     def ball_player_collision(self):
         return self.ball_player1_collision() or self.ball_player2_collision()
