@@ -1,0 +1,6 @@
+for item in label1.keys():
+    print(item, ": ", label1[item])
+    
+    # ttk Label Widget Anzeigen lassen. 
+    
+    
